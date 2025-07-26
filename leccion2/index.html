@@ -64,9 +64,19 @@
                 <h3>Reto</h3>
                 <p>Crea la estructura de un formulario en el espacio de abajo. Configúralo para que envíe los datos a
                     una página imaginaria llamada <code>/registro</code> utilizando el método <code>POST</code>.</p>
-                <!-- Espacio para el reto del alumno -->
-
+                <!-- Espacio para el reto del alumno -->                
             </div>
+            <form action="/registro" method="POST" class="form-example">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="usuario_nombre" placeholder="Escribe tu nombre"> 
+                <label for="apellido">apellido</label>
+                <input type="text" id="apellido " name="usuario_apellido" placeholder="Escribe tu apellido"
+                <label for="password">Contraseña</label>
+                <input type="password" id="contraseña" name="usuario_contraseña" placeholder="**********">
+                <div class="submit-container" style="text-align: center; padding: 20px;">
+                    <button type="submit">Enviar</button>
+                </div>
+             </form>
         </div>
         <div class="nav-links">
             <a href="../index.html">Volver al Menú Principal</a>
